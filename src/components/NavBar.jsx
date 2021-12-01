@@ -1,6 +1,6 @@
 //import React from 'react'
 import { Nav, Navbar, Container, NavDropdown} from "react-bootstrap"
-import {CartWidget} from '../components/CartWidget';
+import CartWidget from '../components/CartWidget';
 
 
 const NavBar = () => {
@@ -8,7 +8,7 @@ const NavBar = () => {
         <div>
             <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">LWDLP</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
@@ -23,10 +23,10 @@ const NavBar = () => {
                         <NavDropdown.Item href="#Otros">Otros</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
+                    <CartWidget/>
                     </Navbar.Collapse>
                 </Container>
             </Navbar> 
-            <CartWidget/>
         </div>
     )
 }
